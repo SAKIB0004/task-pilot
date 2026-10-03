@@ -1,0 +1,157 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+.Python
+
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# =========================
+# Virtual Environments
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+
+# =========================
+# Environment & Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+
+# =========================
+# Testing
+# =========================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+
+# =========================
+# Type Checking
+# =========================
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+
+# =========================
+# Linters / Formatters
+# =========================
+
+.ruff_cache/
+
+
+# =========================
+# IDEs & Editors
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# Docker
+# =========================
+
+docker-compose.override.yml
+
+
+# =========================
+# Database
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# =========================
+# Local temporary files
+# =========================
+
+tmp/
+temp/
+*.tmp
+
+
+# =========================
+# Coverage / Reports
+# =========================
+
+coverage.xml
+*.cover
+.pyre/
+
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Generated files
+# =========================
+
+*.bak
+*.backup
