@@ -1,6 +1,7 @@
 from sqlalchemy import DateTime, Index, String, Text, func, Column, Integer
 
 from app.db.base import Base
+from app.modules.task.enums import TaskStatus, TaskPriority
 
 class Task(Base):
     __tablename__ = "tasks"
@@ -9,8 +10,8 @@ class Task(Base):
     user_id = Column(String(50), nullable=True)
     title = Column(String(255), nullable=True)
     description = Column(Text, nullable=True)
-    status = Column(String(50), nullable=False, default="pending")
-    priority = Column(String(50), nullable=False, default="medium") 
+    status = Column(TaskStatus, nullable=False, default=TaskStatus.PENDING)
+    priority = Column(TaskPriority, nullable=False, default=TaskPriority.MEDIUM)
     due_date = Column(DateTime(timezone=False), nullable=True)
 
     created_at = Column(DateTime(timezone=False), nullable=False, server_default=func.now())
