@@ -10,7 +10,7 @@ settings = get_settings()
 configure_logging()
 
 
-def create_application() -> FastAPI:
+def create_application():
     app = FastAPI(
         title=settings.app_name,
         description="AI-powered task management REST API.",
