@@ -20,7 +20,7 @@ def create_application():
 
     app.include_router(
         api_router,
-        prefix=settings.api_v1_prefix,
+        prefix="/api/v1",
     )
 
     register_exception_handlers(app)

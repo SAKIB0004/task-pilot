@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     app_name: str = "TaskPilot"
     app_env: str = "development"
     debug: bool = False
-    api_v1_prefix: str = "/api/v1"
+    
 
     database_url: str
 
